@@ -1,0 +1,12 @@
+# alap játékmód
+# segítség nélkül
+# külső fileban vannak a kérdések
+# 1. beolvassuk
+# 2. eltároljuk
+# 3. rendszerezzük
+# 4. randomizálva kérdezünk.
+
+# ez csak első feldolgozás, valójában csv a bemenet, 2x is lesz csv beolvasás, szóval lehetne 1 beolvasó függvényt írni
+df = pd.read_excel("loim.xls")
+
+df.to_csv("loim.csv", index=False, encoding="utf-8-sig")
